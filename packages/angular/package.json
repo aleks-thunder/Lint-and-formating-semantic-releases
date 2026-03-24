@@ -1,6 +1,6 @@
 {
   "name": "@testlock-eng/angular",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Shared Angular lint and format configuration",
   "license": "MIT",
   "main": "eslint.js",
