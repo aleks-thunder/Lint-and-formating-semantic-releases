@@ -15,6 +15,14 @@ Use Conventional Commits:
 - `feat(scope): ...` -> minor
 - `feat(scope)!: ...` or `BREAKING CHANGE:` -> major
 
+Scope notes:
+
+- `scope` identifies the affected area/package (helps changelog clarity in monorepo releases).
+- Recommended scopes: `base`, `angular`, `react`, `repo`, `docs`, `ci`.
+- Common commit types:
+  - Releasable: `feat`, `fix` (and `!`/`BREAKING CHANGE` for major).
+  - Usually non-releasable: `chore`, `docs`, `style`, `refactor`, `test`, `build`, `ci`.
+
 ## 4) GitHub Actions workflows
 
 ### Production release

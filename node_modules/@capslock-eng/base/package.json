@@ -1,0 +1,26 @@
+{
+  "name": "@testlock-eng/base",
+  "version": "0.0.0-development",
+  "description": "Shared base ESLint and Prettier configuration",
+  "license": "MIT",
+  "main": "eslint.js",
+  "exports": {
+    ".": "./eslint.js",
+    "./eslint": "./eslint.js",
+    "./prettier": "./prettier.js"
+  },
+  "files": [
+    "eslint.js",
+    "prettier.js"
+  ],
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "release": {
+    "extends": "../../.releaserc.json"
+  }
+}
