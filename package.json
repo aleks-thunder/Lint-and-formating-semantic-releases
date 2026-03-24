@@ -5,7 +5,7 @@
   "description": "Shared lint and format configuration monorepo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aleks-thunder/Lint-and-formating-semantic-releases.git"
+    "url": "https://github.com/aleks-thunder/lint-and-formating-semantic-releases.git"
   },
   "workspaces": [
     "packages/*"
