@@ -72,7 +72,7 @@ always-auth=true
 ### Base package
 
 ```bash
-npm i -D @testlock-eng/base eslint prettier
+npm i -D @testlock-eng/base
 ```
 
 `.eslintrc.cjs`:
@@ -92,7 +92,7 @@ module.exports = require("@testlock-eng/base/prettier");
 ### Angular package
 
 ```bash
-npm i -D @testlock-eng/angular eslint prettier
+npm i -D @testlock-eng/angular
 ```
 
 `.eslintrc.cjs`:
@@ -112,7 +112,7 @@ module.exports = require("@testlock-eng/angular/prettier");
 ### React package
 
 ```bash
-npm i -D @testlock-eng/react eslint prettier
+npm i -D @testlock-eng/react
 ```
 
 `.eslintrc.cjs`:
@@ -128,6 +128,8 @@ module.exports = {
 ```js
 module.exports = require("@testlock-eng/react/prettier");
 ```
+
+Note: `eslint` and `prettier` are installed transitively from `@testlock-eng/base`, so consumers normally install only the preset package (`@testlock-eng/react`/`@testlock-eng/angular`/`@testlock-eng/base`).
 
 ## 8) Rollout checklist for other projects
 
