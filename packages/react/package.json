@@ -3,6 +3,10 @@
   "version": "0.0.0-development",
   "description": "Shared React lint and format configuration",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleks-thunder/lint-and-formating-semantic-releases.git"
+  },
   "main": "eslint.js",
   "exports": {
     ".": "./eslint.js",

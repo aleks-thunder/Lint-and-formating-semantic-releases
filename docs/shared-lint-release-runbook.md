@@ -28,18 +28,16 @@ Scope notes:
 ### Production release
 
 - Trigger: push to `main`.
-- Matrix runs for:
-  - `packages/base`
-  - `packages/angular`
-  - `packages/react`
-- Executes `npx semantic-release`.
-- Publishes to `https://npm.pkg.github.com`.
+- Path filter detects which of `packages/base`, `packages/angular`, `packages/react` changed.
+- Jobs run **in order** (`release-base` → `release-angular` → `release-react`) to avoid concurrent git/npm publish races.
+- Runs `node ../../node_modules/semantic-release/bin/semantic-release.js` from each package directory.
+- Publishes to `https://npm.pkg.github.com` under scope `@aleks-thunder` (must match the GitHub user/org that owns the repo).
 
 ### Demo dry-run
 
 - Workflow: `.github/workflows/release-demo.yml`
 - Trigger: `workflow_dispatch`.
-- Executes `npx semantic-release --dry-run` per package.
+- Matrix dry-runs each package with `semantic-release --dry-run`.
 - Shows calculated next version and release notes without publishing.
 
 ## 5) Authentication and permissions
@@ -56,6 +54,8 @@ In `.npmrc`:
 @aleks-thunder:registry=https://npm.pkg.github.com
 always-auth=true
 ```
+
+Each package’s `package.json` includes a `repository` URL pointing at this monorepo so GitHub Packages can link published packages to the repository (per GitHub docs).
 
 ## 6) Short demo script (Acceptance Criteria)
 
