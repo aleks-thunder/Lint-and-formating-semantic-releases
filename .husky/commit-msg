@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -e
+
+ROOT_DIR="$(git rev-parse --show-toplevel)"
+node "$ROOT_DIR/node_modules/@commitlint/cli/cli.js" --edit "$1"
