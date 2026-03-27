@@ -1,6 +1,6 @@
 {
   "name": "@aleks-thunder/react",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "Shared React lint and format configuration",
   "license": "MIT",
   "repository": {
