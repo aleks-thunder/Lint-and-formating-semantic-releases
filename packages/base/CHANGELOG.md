@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v1.0.2...base-v1.0.3) (2026-03-27)
+
+
+### Bug Fixes
+
+* **test:** react changelog ([a16ba90](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/a16ba901cb5cbd08b833ec6146d841964689ea26))
+
 ## [1.0.2](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v1.0.1...base-v1.0.2) (2026-03-27)
 
 
