@@ -11,7 +11,6 @@ module.exports = {
         "chore",
         "docs",
         "ci",
-        "build",
         "refactor",
         "test",
         "style",
