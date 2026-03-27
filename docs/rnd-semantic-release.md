@@ -104,3 +104,33 @@
 - **Scope alignment**: npm scope must match GitHub owner (`@aleks-thunder`) for GitHub Packages.
 - **Stable preset exports**: each package exports `./eslint` and `./prettier` via `package.json` `exports`.
 - **Local + CI enforcement**: PR title lint action blocks non-conventional PR titles in CI (useful with squash merges) (`.github/workflows/pr-title-lint.yml`).
+
+## Commit format required
+
+Use Conventional Commits:
+
+- `fix(scope): ...` -> patch
+- `feat(scope): ...` -> minor
+- `feat(scope)!: ...` -> major
+
+## Short demo checklist
+
+1. Open GitHub **Actions**.
+2. Run `Demo semantic-release dry run`.
+3. Merge a PR with `feat(base): ...` (or `fix(base): ...`).
+4. Confirm `Release packages` workflow completed.
+5. Confirm package tag (for example `base-v1.0.4`).
+6. Confirm GitHub Release and package publish.
+
+## Rollout checklist for consumer repos
+
+- Add dependency on `@aleks-thunder/base` / `@aleks-thunder/angular` / `@aleks-thunder/react`.
+- Extend ESLint/Prettier from the selected preset package.
+- Remove duplicated local lint/format rules.
+- Run lint/format locally and validate CI.
+
+## Troubleshooting
+
+- **No release created**: commit is not releasable (`feat`/`fix`/`feat()!`).
+- **Wrong package released**: check `changes` output (`base/angular/react=true|false`) in workflow logs.
+- **Auth/publish errors**: confirm token permissions and scope mapping in `.npmrc`.

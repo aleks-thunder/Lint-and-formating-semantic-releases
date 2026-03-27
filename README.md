@@ -2,12 +2,6 @@
 
 This repository publishes reusable lint and formatting presets as scoped packages for consumer applications.
 
-## Packages
-
-- `@aleks-thunder/base`
-- `@aleks-thunder/angular`
-- `@aleks-thunder/react`
-
 ## How release automation works
 
 - Commits on `main` follow Conventional Commits.
@@ -15,24 +9,10 @@ This repository publishes reusable lint and formatting presets as scoped package
 - Package version/tag/release are created automatically.
 - Package is published to GitHub Packages (`npm.pkg.github.com`).
 
-## Consumer usage
+See `[docs/semantic-release-rnd.md](docs/semantic-release-rnd.md)` for a concise repo-specific R&D/usage guide and workflow notes.
 
-Install package:
+## Packages
 
-```bash
-npm i -D @aleks-thunder/base
-```
-
-ESLint (`.eslintrc.cjs`):
-
-```js
-module.exports = {
-  extends: ["@aleks-thunder/base/eslint"],
-};
-```
-
-Prettier (`prettier.config.cjs`):
-
-```js
-module.exports = require("@aleks-thunder/base/prettier");
-```
+- `@aleks-thunder/base`
+- `@aleks-thunder/angular`
+- `@aleks-thunder/react`
