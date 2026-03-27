@@ -34,6 +34,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "release": {
-    "extends": "../../.releaserc.json"
+    "extends": "../../.releaserc.json",
+    "tagFormat": "react-v${version}"
   }
 }
