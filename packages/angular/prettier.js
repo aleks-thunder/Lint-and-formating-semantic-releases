@@ -8,7 +8,7 @@ module.exports = {
   arrowParens: "avoid",
   trailingComma: "all",
   bracketSameLine: false,
-  printWidth: 120,
+  printWidth: 100,
   plugins: ["prettier-plugin-multiline-arrays"],
   multilineArraysWrapThreshold: 2,
   overrides: [
