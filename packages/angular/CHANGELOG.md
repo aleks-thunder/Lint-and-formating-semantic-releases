@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/angular-v1.0.5...angular-v1.0.6) (2026-03-27)
+
+
+### Bug Fixes
+
+* **releases:** changelog react test ([3b956c2](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/3b956c2c85dd4bb608f732117b22dffee42ee80b))
+* **releases:** changelog test ([7c4b90e](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/7c4b90e807b8feb12ad619d791d27e36444cecab))
+
 ## [1.0.5](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/angular-v1.0.4...angular-v1.0.5) (2026-03-27)
 
 
