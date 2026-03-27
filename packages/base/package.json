@@ -1,6 +1,6 @@
 {
   "name": "@aleks-thunder/base",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "Shared base ESLint and Prettier configuration",
   "license": "MIT",
   "repository": {

@@ -60,9 +60,8 @@ jobs:
           echo "angular=${{ steps.filter.outputs.angular }}"
           echo "react=${{ steps.filter.outputs.react }}"
 
-  release-base:
+  release-packages:
     needs: changes
-    if: needs.changes.outputs.base == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -83,6 +82,7 @@ jobs:
         run: npm install
 
       - name: Release base
+        if: needs.changes.outputs.base == 'true' || github.event_name == 'workflow_dispatch'
         working-directory: packages/base
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -90,29 +90,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node ../../node_modules/semantic-release/bin/semantic-release.js
 
-  release-angular:
-    needs: [changes, release-base]
-    if: (needs.changes.outputs.angular == 'true' || github.event_name == 'workflow_dispatch') && needs.release-base.result != 'failure'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://npm.pkg.github.com
-          scope: '@aleks-thunder'
-          cache: npm
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Release angular
+        if: needs.changes.outputs.angular == 'true' || github.event_name == 'workflow_dispatch'
         working-directory: packages/angular
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,28 +99,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node ../../node_modules/semantic-release/bin/semantic-release.js
 
-  release-react:
-    needs: [changes, release-angular]
-    if: (needs.changes.outputs.react == 'true' || github.event_name == 'workflow_dispatch') && needs.release-angular.result != 'failure'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://npm.pkg.github.com
-          scope: '@aleks-thunder'
-          cache: npm
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Release react
+        if: needs.changes.outputs.react == 'true' || github.event_name == 'workflow_dispatch'
         working-directory: packages/react
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
