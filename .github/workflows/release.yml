@@ -27,6 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Detect changed package paths
@@ -61,6 +62,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -90,6 +92,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Node.js
