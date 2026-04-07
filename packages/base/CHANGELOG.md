@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v3.0.0...base-v3.0.1) (2026-03-27)
+
+
+### Bug Fixes
+
+* **demo:** test branch merge, base update ([d2a3dae](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/d2a3daebe43e3777aab8b9b19648091f2b3cb8b5))
+
 # [3.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v2.0.0...base-v3.0.0) (2026-03-27)
 
 # [2.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v1.0.6...base-v2.0.0) (2026-03-27)

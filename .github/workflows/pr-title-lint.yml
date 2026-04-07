@@ -18,7 +18,7 @@ jobs:
       - name: Validate conventional format with clear message
         shell: bash
         # will notify the user with a error message if the PR title does not follow the conventional commits format
-        run: | 
+        run: |
           title="${{ github.event.pull_request.title }}"
           pattern='^(feat|fix|breaking)(\([a-z0-9._/-]+\))?(!)?: .+$'
           if [[ ! "$title" =~ $pattern ]]; then
@@ -34,4 +34,3 @@ jobs:
             breaking
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
