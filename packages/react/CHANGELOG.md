@@ -1,3 +1,10 @@
+# [3.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v2.0.0...react-v3.0.0) (2026-04-07)
+
+
+### Bug Fixes
+
+* **demo:** test branch merge, base update ([d2a3dae](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/d2a3daebe43e3777aab8b9b19648091f2b3cb8b5))
+
 # [2.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v1.1.0...react-v2.0.0) (2026-03-27)
 
 # [1.1.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v1.0.2...react-v1.1.0) (2026-03-27)
