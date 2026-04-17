@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/angular-v6.0.0...angular-v6.1.0) (2026-04-17)
+
+
+### Features
+
+* **test:** test feat release ([881cfb4](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/881cfb45ef21e539a1937b715039f8e1d0c27551))
+
 # [6.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/angular-v5.0.2...angular-v6.0.0) (2026-04-17)
 
 
