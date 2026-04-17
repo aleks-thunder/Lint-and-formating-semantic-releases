@@ -1,3 +1,10 @@
+## [5.0.5](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v5.0.4...base-v5.0.5) (2026-04-17)
+
+
+### Bug Fixes
+
+* **test:** new release ylm ([4ef5cb0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/4ef5cb0c8e563eb3ab7d6f33df9137b51708c8a2))
+
 ## [5.0.4](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v5.0.3...base-v5.0.4) (2026-04-17)
 
 
