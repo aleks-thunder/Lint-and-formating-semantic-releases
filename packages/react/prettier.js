@@ -7,8 +7,5 @@ export default {
   arrowParens: "always",
   endOfLine: "lf",
   singleAttributePerLine: true,
-  plugins: [
-    "prettier-plugin-multiline-arrays",
-    "prettier-plugin-tailwindcss",
-  ],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
