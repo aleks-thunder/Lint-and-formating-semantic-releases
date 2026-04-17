@@ -1,3 +1,11 @@
+# [5.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v4.0.2...react-v5.0.0) (2026-04-17)
+
+
+### Bug Fixes
+
+* **test:** new release ylm ([4ef5cb0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/4ef5cb0c8e563eb3ab7d6f33df9137b51708c8a2))
+* **test:** new release ylm ([16b192f](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/16b192f56fd34ec734c1a6ecc00331bb99cb1a6c))
+
 ## [4.0.3](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v4.0.2...react-v4.0.3) (2026-04-17)
 
 
