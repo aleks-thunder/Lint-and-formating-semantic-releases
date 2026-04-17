@@ -12,3 +12,4 @@ export default {
   plugins: ["prettier-plugin-multiline-arrays"],
   multilineArraysWrapThreshold: 2,
 };
+// test comment line
