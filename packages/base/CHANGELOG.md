@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v5.0.0...base-v5.0.1) (2026-04-17)
+
+
+### Bug Fixes
+
+* **test:** pr merge name ([6ab8ff6](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/6ab8ff6e7ce06b8afed2e1ac3fc102cc7d829697))
+
 # [5.0.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v4.0.0...base-v5.0.0) (2026-04-07)
 
 
