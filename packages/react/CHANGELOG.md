@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v4.0.1...react-v4.0.2) (2026-04-17)
+
+
+### Bug Fixes
+
+* **test:** new release ylm ([f381042](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/f3810428dd50ed596436d8a44e7fcdd2e4d25c9c))
+
 ## [4.0.1](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v4.0.0...react-v4.0.1) (2026-04-17)
 
 
