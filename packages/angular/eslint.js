@@ -34,25 +34,6 @@ export default [
           style: "kebab-case",
         },
       ],
-      "@typescript-eslint/member-ordering": [
-        "error",
-        {
-          default: [
-            "public-decorated-field",
-            "protected-decorated-field",
-            "private-decorated-field",
-            "public-instance-field",
-            "public-static-field",
-            "protected-instance-field",
-            "private-instance-field",
-            "constructor",
-            "public-instance-method",
-            "public-static-method",
-            "protected-instance-method",
-            "private-instance-method",
-          ],
-        },
-      ],
     },
   },
   {

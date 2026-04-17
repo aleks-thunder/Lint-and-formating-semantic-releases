@@ -20,17 +20,17 @@
   ],
   "dependencies": {
     "@aleks-thunder/base": "*",
-    "@eslint/js": "^9.0.0",
-    "angular-eslint": "^20.0.0",
-    "eslint-config-prettier": "^10.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
-    "eslint-plugin-unused-imports": "^4.0.0",
-    "prettier-plugin-multiline-arrays": "^4.0.3",
-    "typescript-eslint": "^8.0.0"
+    "@eslint/js": "9.39.4",
+    "angular-eslint": "20.7.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint-plugin-unused-imports": "4.4.1",
+    "typescript-eslint": "8.57.2"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
   },
   "release": {
     "extends": "../../.releaserc.json",
