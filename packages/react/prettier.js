@@ -9,4 +9,3 @@ export default {
   singleAttributePerLine: true,
   plugins: ["prettier-plugin-tailwindcss"],
 };
-// test comment line
