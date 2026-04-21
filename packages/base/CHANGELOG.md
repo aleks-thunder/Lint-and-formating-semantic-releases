@@ -1,3 +1,10 @@
+## [6.1.4](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v6.1.3...base-v6.1.4) (2026-04-21)
+
+
+### Bug Fixes
+
+* **squash:** Squash4 ([#28](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/issues/28)) ([11343cf](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/11343cfc6c89262ba8d6ef4bbc33e368a1de78c9))
+
 ## [6.1.3](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v6.1.2...base-v6.1.3) (2026-04-21)
 
 
