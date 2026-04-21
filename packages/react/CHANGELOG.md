@@ -1,3 +1,10 @@
+## [5.1.3](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v5.1.2...react-v5.1.3) (2026-04-21)
+
+
+### Bug Fixes
+
+* **squash:** Squash4 ([#28](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/issues/28)) ([11343cf](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/11343cfc6c89262ba8d6ef4bbc33e368a1de78c9))
+
 ## [5.1.2](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/react-v5.1.1...react-v5.1.2) (2026-04-21)
 
 
