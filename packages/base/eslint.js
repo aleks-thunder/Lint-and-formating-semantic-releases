@@ -79,7 +79,7 @@ export default defineConfig({
     "no-duplicate-imports": "error",
     "object-shorthand": "warn",
     "unused-imports/no-unused-imports": "error",
-    "unused-imports/no-unused-vars": [
+    "@typescript-eslint/no-unused-vars": [
       "error",
       {
         vars: "all",
