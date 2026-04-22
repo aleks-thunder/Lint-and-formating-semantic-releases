@@ -1,3 +1,19 @@
+# [6.2.0](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/angular-v6.1.1...angular-v6.2.0) (2026-04-22)
+
+
+### Bug Fixes
+
+* **base:** lint updt ([ceb2a01](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/ceb2a01dc640174efaef8e8c5d428f4cffaaa9c6))
+* **base:** lint updt ([17101be](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/17101be4e7e0fd039817e5db9f732d25dd7239c9))
+* **squash:** Squash4 ([#28](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/issues/28)) ([11343cf](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/11343cfc6c89262ba8d6ef4bbc33e368a1de78c9))
+* **test:** add no-unused-vars: off ([06bed7e](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/06bed7ecad1d860699935d367d618305919cf3c8))
+* **test:** remove no-unused-vars: off ([7199232](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/7199232a863bf6a263507635e473b2c66b1fa3d1))
+
+
+### Features
+
+* **lint:** base ts/no-unsued-vars allowed patern ([5c5a0be](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/5c5a0be8a96ad02c4932f579571951ea4fd74589))
+
 ## [6.1.1](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/angular-v6.1.0...angular-v6.1.1) (2026-04-21)
 
 

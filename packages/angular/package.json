@@ -1,6 +1,6 @@
 {
   "name": "@aleks-thunder/angular",
-  "version": "6.1.1",
+  "version": "6.2.0",
   "description": "Shared Angular lint and format configuration",
   "type": "module",
   "license": "MIT",
