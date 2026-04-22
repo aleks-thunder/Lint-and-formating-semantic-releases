@@ -88,6 +88,5 @@ export default defineConfig({
     "no-duplicate-imports": "error",
     "object-shorthand": "warn",
     "unused-imports/no-unused-imports": "error",
-    "no-console": ["warn", { allow: ["warn", "error"] }],
   },
 });
