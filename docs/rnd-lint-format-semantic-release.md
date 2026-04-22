@@ -10,6 +10,7 @@ Before publishing real shared presets, we need to validate the end-to-end releas
 4. Create a second consumer repo and install the published package(s) as dependencies.
 
 This dummy repo proves that:
+
 - release automation works (versioning + Git tags + GitHub Release creation),
 - package publishing works (GitHub Packages registry),
 - consumers can install and use the presets.
@@ -51,25 +52,34 @@ This dummy repo proves that:
 
 #### Additional R&D: local development without release
 
-**Goal:** test `base -> angular/react -> consumer` changes locally before publishing.
+**Goal:** test `base -> angular/react -> consumer` changes locally before publishing, without machine-specific `file:` paths.
 
-**Recommended workflow (tested):**
+**Recommended workflow: `yalc`**
 
-1. In consumer `package.json`, set preset package to local path:
-   - `@aleks-thunder/angular`: `file:../../Lint-and-formating-semantic-releases/packages/angular`
-   - `@aleks-thunder/react`: `file:../../Lint-and-formating-semantic-releases/packages/react`
-2. Add override for base:
-   - `"overrides": { "@aleks-thunder/base": "file:../../Lint-and-formating-semantic-releases/packages/base" }`
-3. Run `npm install` in consumer.
-4. Edit preset files locally in this repo and re-run:
-   - `npm install` (consumer) + `npx eslint ...` / app lint command.
+1. Install yalc once:
+   - `npm i -g yalc`
+2. In this preset repo, publish local snapshots:
+   - `cd packages/base && yalc publish`
+   - `cd ../angular && yalc publish` (or `../react`)
+3. In consumer repo, add local packages:
+   - `yalc add @aleks-thunder/base @aleks-thunder/angular`
+   - then `npm install`
+4. After each preset change, sync again:
+   - from changed preset package folder (`packages/base`, `packages/angular`, or `packages/react`):
+     - `yalc push`
+   - in consumer repo:
+     - `yalc update @aleks-thunder/base @aleks-thunder/angular`
+     - `npm install`
+5. If lint output in editor does not refresh:
+   - open Command Palette and run `ESLint: Restart ESLint Server`
 
-**Why this works:** consumer loads local preset package(s), and their `@aleks-thunder/base` dependency resolves to local `packages/base` via `overrides`.
+**Why this works:** `yalc` behaves like a lightweight local registry, so dependency resolution is realistic and independent of folder structure.
 
 **Trade-offs:**
-- Fast local iteration, no release needed.
-- `file:` paths are local-dev only; keep CI/release flows on registry versions.
-- If changes seem stale (due to ESLint cache), run `npm i --force` in consumer and restart editor `Developer: Reload Window`.
+
+- Works across machines and teams; no hardcoded relative paths.
+- Close to real package-consumer behavior.
+- Keep CI/release flows on registry versions (`@aleks-thunder/*@x.y.z`), not local `yalc` artifacts.
 
 ## Final chosen strategy (applies to this repository)
 
@@ -97,4 +107,3 @@ This dummy repo proves that:
   - `eslint.config.js`: `import` from `@aleks-thunder/angular/eslint` (see [consumer.md](./consumer.md)).
 - Prettier config:
   - `prettier.config.js`: `import` from `@aleks-thunder/angular/prettier` (see [consumer.md](./consumer.md)).
-
