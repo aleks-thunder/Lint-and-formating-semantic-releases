@@ -1,3 +1,10 @@
+## [6.2.3](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v6.2.2...base-v6.2.3) (2026-04-22)
+
+
+### Bug Fixes
+
+* **base:** lint updt ([17101be](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/commit/17101be4e7e0fd039817e5db9f732d25dd7239c9))
+
 ## [6.2.2](https://github.com/aleks-thunder/lint-and-formating-semantic-releases/compare/base-v6.2.1...base-v6.2.2) (2026-04-21)
 
 
